@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ringenes Herre – Fanside</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <button id="themeBtn" onclick="toggleTheme()" title="Bytt tema">🌙</button>
+    <h1>⚔️ Ringenes Herre ⚔️</h1>
+    <p>En fanside for deg som elsker Midgard</p>
+    <div id="userBadge" style="margin-top:0.6rem;"></div>
+  </header>
+
+  <div id="loginBox">
+    <h2>🚪 Logg inn</h2>
+    <input type="text" id="username" placeholder="Skriv inn navnet ditt...">
+    <button onclick="login()">Start reisen →</button>
+    <div id="welcomeMsg"></div>
+  </div>
+
+  <div id="profileCard">
+    <div id="profileContent"></div>
+  </div>
+
+  <nav>
+    <a href="index.html">🏠 Hjem</a>
+    <a href="sider/karakterer.html">👥 Karakterer</a>
+    <a href="sider/steder.html">🗺️ Steder</a>
+    <a href="sider/quiz.html">🧠 Quiz</a>
+    <a href="sider/kommentarer.html">💬 Kommentarer</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>💍 Den ene ringen</h2>
+      <div class="ring-visual">💍</div>
+      <p>
+        <span class="highlight">Den ene ringen</span> ble smidd av Sauron i Mordor
+        for å kontrollere de andre maktringene.
+      </p>
+      <p>
+        Ringen gikk fra Sauron til Isildur, videre til Gollum, og til slutt til
+        Frodo Baggins – hobbiten som bar den til Mordor.
+      </p>
+      <div id="quoteBox">«Not all those who wander are lost.»</div>
+    </section>
+
+    <section>
+      <h2>🌿 Hobbiter</h2>
+      <p>
+        Hobbiter er et lite, fredelig folkeslag som bor i
+        <span class="highlight">Shire</span>. De elsker mat, fest og rolige dager.
+      </p>
+    </section>
+
+    <section>
+      <h2>🧙 Gandalf</h2>
+      <p>
+        Gandalf er en av <span class="highlight">istari</span> – en mektig trollmann
+        sendt til Midgard for å hjelpe folkene mot Sauron.
+      </p>
+      <p><em>«You shall not pass!»</em></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 – En fanside laget av en ekte Midgard-elsker 🧝‍♂️</p>
+  </footer>
+
+  <button id="musicBtn" onclick="toggleMusic()" title="Spill av stemningstone">🎵</button>
+
+  <script src="js/felles.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>
