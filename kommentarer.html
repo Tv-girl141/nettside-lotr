@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kommentarer – Ringenes Herre</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header>
+    <button id="themeBtn" onclick="toggleTheme()">🌙</button>
+    <h1>💬 Kommentarer</h1>
+    <p>Del dine tanker om Midgard</p>
+    <div id="userBadge" style="margin-top:0.6rem;"></div>
+  </header>
+
+  <nav>
+    <a href="../index.html">🏠 Hjem</a>
+    <a href="karakterer.html">👥 Karakterer</a>
+    <a href="steder.html">🗺️ Steder</a>
+    <a href="quiz.html">🧠 Quiz</a>
+    <a href="kommentarer.html">💬 Kommentarer</a>
+  </nav>
+
+  <main>
+    <section id="commentSection">
+      <h2>Skriv en kommentar</h2>
+      <textarea id="commentInput" placeholder="Del dine tanker om Midgard..."></textarea>
+      <button onclick="addComment()">📜 Publiser</button>
+      <ul id="commentList"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 – En fanside laget av en ekte Midgard-elsker 🧝‍♂️</p>
+  </footer>
+
+  <button id="musicBtn" onclick="toggleMusic()">🎵</button>
+
+  <script src="../js/felles.js"></script>
+  <script src="../js/kommentarer.js"></script>
+</body>
+</html>
